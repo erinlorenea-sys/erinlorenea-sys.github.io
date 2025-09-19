@@ -53,8 +53,12 @@
 </main>
 
 <footer>
-    © 2025 Erin Aycock · <a href="#top">Back to top</a>
-  </footer>
+  <p>&copy; <span id="year"></span> Erin Aycock</p>
+</footer>
 
-  </body>
-  
+<script>
+  const yearSpan = document.getElementById("year");
+  yearSpan.textContent = new Date().getFullYear();
+</script>
+
+</body>
