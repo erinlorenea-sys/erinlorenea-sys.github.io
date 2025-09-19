@@ -10,6 +10,10 @@ header{
   background: var(--paper);
   border-bottom: 1px solid rgba(0,0,0,0.12);
 }
+header.dark-mode {
+  background-color: black;
+  color: white;}
+  
 nav{
   display: flex;
   gap: var(--space-2);
@@ -20,6 +24,10 @@ nav{
 
 body{ color: var(--ink); background: var(--paper); }
 
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
 /* Headings */
 h1 {
   color:var(--brand-green);
