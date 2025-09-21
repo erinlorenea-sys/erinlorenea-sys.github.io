@@ -1,45 +1,48 @@
 :root{
   --ink:#4d2600;                /* text color */
   --paper: #fff3e6;              /* page background */
-  --brand-green: #00664d;         /* accent */
+  --brand-green: #00664d; /* accent */
+  --dm-green: #00b386;
   --space-2: 1rem;         /* spacing scale */
 }
+
+a:link {color: var(--dm-green)}
+a:hover{color: var(--brand-green)}
+
+
+.dark-mode1:is(header,body){ background-color: var(--ink);
+  color: var(--paper);}
 
 header{
   position: sticky; top: 0;
   background: var(--paper);
   border-bottom: 1px solid rgba(0,0,0,0.12);
 }
-header.dark-mode {
-  background-color: black;
-  color: white;}
   
 nav{
   display: flex;
   gap: var(--space-2);
   justify-content: center;
   padding: calc(var(--space-2) * 0.75) 0;
-  a:hover{ color: rgba(198,140,83,50); } /* input your values! */
-}
+ }
 
 body{ color: var(--ink); background: var(--paper); }
 
-body.dark-mode {
-  background-color: black;
-  color: white;
-}
-/* Headings */
+
+
 h1 {
   color:var(--brand-green);
   text-align: xxxx;
 }
+
+h1.dark-mode2 {color: var(--dm-green);}
 
 h2 {
   color: var(--brand-green);
   margin-top: xxxx;
 }
 
-h2.tagline{ opacity: .9; font-style: italic; }
+h2.dark-mode2 {color: var(--dm-green);}
 
 /* Paragraphs */
 p {
