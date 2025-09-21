@@ -14,27 +14,28 @@
  <button onclick="myFunction()">Toggle dark mode</button>
  
  <a id="top"></a> <!-- back-to-top anchor -->
- <header> <h1>Erin Aycock</h1>
+ <header> 
+   <h1>Erin Aycock</h1>
 
   <nav>
      <a href="#about">About</a>
      <a href="#education">Education</a>
      <a href="#projects">Projects</a>
      <a href="#contact">Contact</a>
-  </nav> </header>
+   </nav> 
+  </header>
 
 <main>
   <section id="about">
     <h2>About Me</h2>
-    <h2 class="tagline">Student - Researcher</h2>
     <p>I am a young person in America who is excited to continuing learning about the world around me, with a love of all things linguistics and sociology! </p>
-  <img src= "LSC game.jpg" alt= "Me at Football Game" width="500">
+  <img src= "LSC game.jpg" alt= "Me at LSC Game" width="500"></img>
   </section>
   
   <section id="education">
     <h2> Education </h2>
     <p> I a senior at the University of Kentucky </p>
- <p> I am double majoring in <em> Linguistics </em> and <strong> Sociology </strong>. </p>
+ <p> I am double majoring in <strong> Linguistics and Sociology </strong>. </p>
     <p>I graduated from Paul Laurence Dunbar High School in Lexington, Ky, at the end of the 2022-2023 school year.</p>
   </section>
   
@@ -57,20 +58,25 @@
 
 <footer>
   <p>&copy; <span id="year"></span> Erin Aycock</p>
+  <a href="#top">Back to Top</a>
 </footer>
 
 <script>
   const yearSpan = document.getElementById("year");
   yearSpan.textContent = new Date().getFullYear();
 
-
     function myFunction() {
        const element1 = document.querySelector("header");
        const element2 = document.body;
-       element1.classList.toggle("dark-mode");
-       element2.classList.toggle("dark-mode");
-      
-    }
+       const element3 = document.querySelector("h1");
+       const element4 = document.querySelectorAll("h2");
+       element1.classList.toggle("dark-mode1");
+       element2.classList.toggle("dark-mode1");
+       element3.classList.toggle("dark-mode2");
+        element4.forEach((h2) => {
+    h2.classList.toggle("dark-mode2");
+  });
+}
 </script>
 
 </body>
